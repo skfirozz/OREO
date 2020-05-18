@@ -1,0 +1,17 @@
+.column {
+    float: left;
+    width: 22%;
+    padding: 10px;
+    margin-left: 0.3cm;
+    margin-bottom: auto;
+    height: auto; 
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .colorr{
+    color: cornsilk;
+    background-color: rgb(80, 117, 196);
+  }

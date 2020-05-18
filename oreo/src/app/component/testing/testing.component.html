@@ -1,0 +1,133 @@
+<div>
+    <mat-toolbar class="docs-navbar-header">
+        <mat-toolbar-row>
+            <div class="logo">
+                <button mat-button>
+                    <img src="assets/mainLogo.jpg" alt="avatar" class="logo">
+                    OREO
+                </button>
+            </div>
+            <button mat-button class="icon" (click)="drawer.toggle()">
+                <mat-icon>swap_horiz</mat-icon>
+            </button>
+        </mat-toolbar-row>
+
+    </mat-toolbar>
+</div>
+<!-- side navigation bar -->
+<div class="sidenavdiv">
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+            <mat-nav-list>
+                <div>
+                    <button mat-stroked-button class="button" (click)="button()">
+                        <mat-icon>home</mat-icon>Oreo
+                    </button>
+                    <button mat-stroked-button class="button" (click)="button()">
+                        <mat-icon>person</mat-icon>User
+                    </button>
+                </div>
+                <div *ngIf="sidenav==true">
+                    <div class="main"><strong>--Main</strong></div>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <mat-icon>home</mat-icon>
+                                Dashboard
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+    
+                        <a mat-list-item matTooltip="Main">
+                            <mat-icon>arrow_right_alt</mat-icon>Main
+                        </a>
+                        <a mat-list-item matTooltip="RTL">
+                            <mat-icon>arrow_right_alt</mat-icon>RTL
+                        </a>
+    
+                        <a mat-list-item matTooltip="Horizontal">
+                            <mat-icon>arrow_right_alt</mat-icon>Horizontal
+                        </a>
+    
+                        <a mat-list-item matTooltip="Ecommerce">
+                            <mat-icon>arrow_right_alt</mat-icon>Ecommerce
+                        </a>
+    
+                        <a mat-list-item matTooltip="Blog">
+                            <mat-icon>arrow_right_alt</mat-icon>Blog
+                        </a>
+                    </mat-expansion-panel>
+    
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <mat-icon>apps</mat-icon>
+                                App
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+    
+                        <a mat-list-item matTooltip="Main">
+                            <mat-icon>arrow_right_alt</mat-icon>Inbox
+                        </a>
+                        <a mat-list-item matTooltip="RTL">
+                            <mat-icon>arrow_right_alt</mat-icon>Chat
+                        </a>
+    
+                        <a mat-list-item matTooltip="Horizontal">
+                            <mat-icon>arrow_right_alt</mat-icon>Calender
+                        </a>
+    
+                        <a mat-list-item matTooltip="Ecommerce">
+                            <mat-icon>arrow_right_alt</mat-icon>Ecommerce
+                        </a>
+    
+                        <a mat-list-item matTooltip="Blog">
+                            <mat-icon>arrow_right_alt</mat-icon>File Manager
+                        </a>
+    
+                        <a mat-list-item matTooltip="Blog">
+                            <mat-icon>arrow_right_alt</mat-icon>Contact list
+                        </a>
+                        <a mat-list-item matTooltip="Blog">
+                            <mat-icon>arrow_right_alt</mat-icon>Blog
+                        </a>
+                    </mat-expansion-panel>
+    
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <mat-icon>shopping_cart</mat-icon>
+                                Ecommerce
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+    
+                        <a mat-list-item matTooltip="Main">
+                            <mat-icon>arrow_right_alt</mat-icon>Dashboard
+                        </a>
+                        <a mat-list-item matTooltip="RTL">
+                            <mat-icon>arrow_right_alt</mat-icon>Product
+                        </a>
+    
+                        <a mat-list-item matTooltip="Horizontal">
+                            <mat-icon>arrow_right_alt</mat-icon>product List
+                        </a>
+    
+                        <a mat-list-item matTooltip="Ecommerce">
+                            <mat-icon>arrow_right_alt</mat-icon>Product detail
+                        </a>
+    
+                        <a mat-list-item matTooltip="Blog">
+                            <mat-icon>arrow_right_alt</mat-icon>User Interface (UI)
+                        </a>
+    
+                        <a mat-list-item matTooltip="Blog">
+                            <mat-icon>arrow_right_alt</mat-icon>Blog
+                        </a>
+                    </mat-expansion-panel>
+                </div>
+            </mat-nav-list>
+        </mat-drawer>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-container>
+</div>

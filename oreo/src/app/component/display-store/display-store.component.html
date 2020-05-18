@@ -1,0 +1,15 @@
+<div>
+    <div class="colorr">
+        <h3>
+            <p>Product</p>
+        </h3>
+        <a>Welcome to oreo</a>
+    </div>
+    <div class="row">
+        <div *ngFor="let store of stores">
+            <div class="column">
+                <app-items [item]="store"></app-items>
+            </div>
+        </div>
+    </div>
+</div>

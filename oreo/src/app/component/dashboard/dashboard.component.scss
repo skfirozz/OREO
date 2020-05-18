@@ -1,0 +1,84 @@
+.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+.toolbar {
+  height: 10px;
+  width: 100%;
+  background-color: rgb(80, 117, 196);
+  position: fixed;
+}
+.logo {
+  height: 25px;
+  width: 25px;
+  border-radius: 25%;
+}
+.icon {
+  margin-left: 50px;
+}
+.drawer {
+  width: 5cm;
+}
+.side {
+  height: 1cm;
+  margin-left: 10px;
+}
+
+.example-sidenav {
+  width: 5cm;
+  height: 100%;
+}
+.button {
+  outline: none;
+  margin: 15px;
+}
+
+.drawer {
+  position: fixed;
+  height: 100vh;
+  min-width: 16.5%;
+  border-right: 1px solid #ccc;
+}
+.drawer .header {
+  position: absolute;
+  right: 0;
+  justify-content: space-between;
+}
+.drawer .contents {
+  padding: 16px;
+}
+
+.main {
+  margin-left: 10px;
+}
+
+.main.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+}
+
+.main.contents {
+  min-height: 100vh;
+  margin-top: 64px;
+  padding: 16px;
+}
+p {
+  font-family: Lato;
+}
+.position-fixed {
+  position: fixed;
+}
+
+.mat-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  margin-top: 58px;
+ 
+}
+mat-sidenav {
+  position: fixed;
+}
